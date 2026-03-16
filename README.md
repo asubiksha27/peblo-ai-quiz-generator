@@ -65,3 +65,18 @@ uvicorn app.main:app --reload
 Open API documentation in browser:
 
 http://127.0.0.1:8000/docs
+
+
+## Architecture
+
+PDF Upload (POST /ingest)
+     ↓
+Text Extraction (app/pdf_ingest.py)
+     ↓
+Content Chunking
+     ↓
+LLM Quiz Generation (app/quiz_generator.py)
+     ↓
+SQLite Database (app/models.py / app/database.py)
+     ↓
+FastAPI Endpoints (app/main.py)
