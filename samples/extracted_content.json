@@ -1,0 +1,18 @@
+[
+  {
+    "source_id": "SRC_001",
+    "chunk_id": "SRC_001_CH_01",
+    "grade": 1,
+    "subject": "Math",
+    "topic": "Shapes",
+    "text": "A triangle has three sides and three angles."
+  },
+  {
+    "source_id": "SRC_001",
+    "chunk_id": "SRC_001_CH_02",
+    "grade": 1,
+    "subject": "Math",
+    "topic": "Shapes",
+    "text": "A square has four equal sides and four right angles."
+  }
+]

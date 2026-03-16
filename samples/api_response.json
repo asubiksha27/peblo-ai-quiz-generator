@@ -1,0 +1,17 @@
+{
+  "topic": "Shapes",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "question": "How many sides does a triangle have?",
+      "type": "MCQ",
+      "options": ["2","3","4","5"],
+      "answer": "3"
+    },
+    {
+      "question": "A square has four equal sides. True or False?",
+      "type": "True/False",
+      "answer": "True"
+    }
+  ]
+}
