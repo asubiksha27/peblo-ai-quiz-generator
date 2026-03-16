@@ -67,6 +67,7 @@ Open API documentation in browser:
 http://127.0.0.1:8000/docs
 
 
+Add System Architecture Section
 ## Architecture
 
 PDF Upload (POST /ingest)
@@ -78,5 +79,33 @@ Content Chunking
 LLM Quiz Generation (app/quiz_generator.py)
      ↓
 SQLite Database (app/models.py / app/database.py)
+     ↓
+FastAPI Endpoints (app/main.py)
+
+Add a one-line explanation of each component:
+
+pdf_ingest.py: extracts and cleans text, splits into chunks
+
+quiz_generator.py: generates MCQ, True/False, Fill-in-the-blank questions from chunks using LLM
+
+adaptive_logic.py: increases or decreases question difficulty based on student answers
+
+main.py: serves API endpoints
+
+2️⃣ Document Adaptive Logic
+
+Add a short paragraph under Features:
+
+Adaptive Difficulty:
+- Correct answer → next question difficulty increases
+- Incorrect answer → next question difficulty decreases
+3️⃣ Add Sample Outputs Section
+## Sample Outputs
+
+See the `samples/` folder for examples:
+
+- `extracted_content.json` → shows text chunks extracted from PDFs  
+- `generated_questions.json` → shows generated quiz questions  
+- `api_response.json` → sample API response for GET /quiz
      ↓
 FastAPI Endpoints (app/main.py)
